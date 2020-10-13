@@ -1,42 +1,42 @@
 package com.tony.service;
 
-import com.tony.pojo.NewsInfo;
+import com.tony.dao.NewsInfo;
+import com.tony.mapper.NewsInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Service;
 
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Service
 public class NewsInfoService {
     @Autowired
-    private DataSource dataSource;
-    private String news = "";
-    public String refreshNews() throws SQLException {
-        Connection connection = dataSource.getConnection();
-        Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM sci_news;");
-        while (resultSet.next()){
-            String ID = resultSet.getString(1);
-            String title = resultSet.getString(2);
-            String type = resultSet.getString(3);
-            String user_id = resultSet.getString(4);
-            String link = resultSet.getString(5);
-            String cover = resultSet.getString(6);
-            int downloads = resultSet.getInt(7);
-            Date gmt_create = resultSet.getDate(8);
-            String create_by = resultSet.getString(9);
-            Date gmt_update = resultSet.getDate(10);
-            String update_by = resultSet.getString(11);
-            NewsInfo aPieceOfnews = new NewsInfo(ID, title,type,user_id,
-                    link,cover,downloads,gmt_create,create_by,
-                    gmt_update,update_by);
-            System.out.println(aPieceOfnews);
-            news += aPieceOfnews.toString();
-        }
-        return news;
+    private NewsInfoMapper newsInfoMapper;
+
+
+    public String getNews(String id) {
+
+        NewsInfo news = newsInfoMapper.getNewsById(id);
+
+        return news.toString();
+    }
+
+    public String addNews(String id, String title, String type, String user_id,
+                          String link,String cover, int downloads,
+                          String create_by, String gmt_create_tmp,String update_by, String gmt_update_tmp) throws ParseException {
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        Date gmt_create = ft.parse(gmt_create_tmp);
+        Date gmt_update = ft.parse(gmt_update_tmp);
+        NewsInfo newsInfo = new NewsInfo(id, title, link, type,
+                user_id, cover, downloads,
+                create_by, gmt_create,update_by,gmt_update);
+
+        newsInfoMapper.createAPieceOfNews(newsInfo);
+        return newsInfo.toString();
+
     }
 
 }

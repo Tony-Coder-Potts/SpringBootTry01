@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662c6c63-8a87-475c-951a-98402428a53a" name="Default Changelist" comment="" />
+    <list default="true" id="662c6c63-8a87-475c-951a-98402428a53a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tony/mapper/NewsInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6b345128-23c7-4aa8-9dd5-371b76ab1a7a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6b345128-23c7-4aa8-9dd5-371b76ab1a7a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tony/SpringbootMybatisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tony/SpringbootMybatisApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tony/controller/NewsInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tony/controller/NewsInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tony/mapper/NewsInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tony/pojo/NewsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tony/dao/NewsInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tony/service/NewsInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tony/service/NewsInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tony/SpringbootMybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tony/SpringbootMybatisApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tony/SpringbootMybatisApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tony/SpringbootMybatisApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tony/controller/NewsInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tony/controller/NewsInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tony/mapper/NewsInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tony/pojo/NewsInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tony/service/NewsInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tony/service/NewsInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tony/SpringBootMybatisApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tony/SpringBootMybatisApplicationTests.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +60,11 @@
         <item name="demo: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="sci_news: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -50,7 +73,19 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1iMOwuLMtLQPjWLq6QwJGDVxYxU" />
@@ -69,10 +104,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tony Stark\Desktop\springboot-mybatis\src\main\resources\mapper" />
+      <recent name="C:\Users\Tony Stark\Desktop\springboot-mybatis\src\main\java\com\tony\mapper" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootMybatisApplication">
+  <component name="RunManager" selected="JUnit.SpringBootMybatisApplicationTests.test">
     <configuration name="SpringBootMybatisApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-mybatis" />
       <extension name="coverage">
@@ -118,6 +160,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBootMybatisApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tony.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tony" />
+      <option name="MAIN_CLASS_NAME" value="com.tony.SpringBootMybatisApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tony.SpringbootMybatisApplication" />
@@ -127,6 +185,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringBootMybatisApplicationTests.test" />
         <item itemvalue="JUnit.SpringBootMybatisApplicationTests.contextLoads" />
         <item itemvalue="JUnit.SpringBootMybatisApplicationTests" />
       </list>
@@ -139,12 +198,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d436dece" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b8b02e18" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d436dece" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4f0c5466" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b8b02e18" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@7121e4c8" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -165,10 +224,24 @@
       <workItem from="1601714239510" duration="572000" />
       <workItem from="1601717008298" duration="10437000" />
       <workItem from="1601728284448" duration="1955000" />
+      <workItem from="1602616671944" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

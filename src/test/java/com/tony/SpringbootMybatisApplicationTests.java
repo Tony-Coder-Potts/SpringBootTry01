@@ -12,6 +12,8 @@ package com.tony;
 //
 //}
 
+import com.tony.dao.NewsInfo;
+import com.tony.mapper.NewsInfoMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,17 +34,15 @@ class SpringBootMybatisApplicationTests {
 
     @Autowired
     private DataSource dataSource;
+    @Autowired
+    private NewsInfoMapper newsInfoMapper;
 
-    @Test
-    void contextLoads() throws SQLException { //根据配置的数据库信息获取连接，执行语句
-        Connection connection = dataSource.getConnection();
-        Statement statement = connection.createStatement();
-        statement.execute("use demo;");
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM sci_news;");
+
 //打印结果
-        while(resultSet.next()){
-            System.out.println(resultSet);
-        }
+    @Test void test(){
+        NewsInfo newsInfo = newsInfoMapper.getNewsById("1");
+        System.out.println(newsInfo);
+
     }
 
 }

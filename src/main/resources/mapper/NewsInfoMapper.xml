@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tony.mapper.NewsInfoMapper">
+    <select id="getNewsById" parameterType="java.lang.String" resultType="com.tony.dao.NewsInfo">
+        select title,link,type,user_id,cover,downloads,gmt_create,create_by from sci_news where id = #{id};
+    </select>
+    <insert id="createAPieceOfNews" parameterType="com.tony.dao.NewsInfo" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO sci_news
+        (
+            id, title, type, user_id, link, cover, downloads, create_by, gmt_create, update_by, gmt_update
+        )
+        VALUES (
+                   #{id},
+                   #{title},
+                   #{type},
+                   #{user_id},
+                   #{link},
+                   #{cover},
+                   #{downloads},
+                   #{create_by},
+                   #{gmt_create},
+                   #{update_by},
+                   #{gmt_update}
+               )
+    </insert>
+</mapper>
